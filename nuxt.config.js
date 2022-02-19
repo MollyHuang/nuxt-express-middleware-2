@@ -53,6 +53,10 @@ export default {
     background: 'yellow'
   },
 
+  serverMiddleware: [
+    { path: 'erik', handler: '~/api/index.js' }
+  ],
+
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   }
