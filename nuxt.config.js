@@ -45,6 +45,14 @@ export default {
     baseURL: '/'
   },
 
+  // loading: false,
+  loading: '~/components/LoadingBar.vue',
+  loadingIndicator: {
+    name: 'circle',
+    color: '#3B8070',
+    background: 'yellow'
+  },
+
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   }
