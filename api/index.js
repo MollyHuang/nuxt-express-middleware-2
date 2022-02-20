@@ -8,7 +8,7 @@ const express = require('express')
 const app = express()
 
 app.get('/', function (req, res) {
-  res.send('[index.js] /api/index.js -- hello world')
+  res.send('[api/index.js] hello world')
 })
 
 module.exports = {
