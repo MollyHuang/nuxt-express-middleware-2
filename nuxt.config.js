@@ -78,7 +78,10 @@ export default {
     '~/api/index',
     // Custom Server Middleware
     // https://nuxtjs.org/docs/configuration-glossary/configuration-servermiddleware/#custom-server-middleware
-    '~/server-middleware/logger'
+    '~/server-middleware/logger',
+    // Custom API endpoint
+    // https://nuxtjs.org/docs/configuration-glossary/configuration-servermiddleware/#custom-api-endpoint
+    { path: '/server-middleware', handler: '~/server-middleware/rest.js' }
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
