@@ -14,7 +14,9 @@ export default {
   name: 'IndexPage',
   loading: true,
   async asyncData (context) {
-    const response = await fetch('http://127.0.0.1:3000/api').then(res => res.text())
+    // eslint-disable-next-line no-console
+    console.log(context.env.baseUrl)
+    const response = await fetch(context.env.baseUrl + '/api').then(res => res.text())
     return { response }
   }
 }

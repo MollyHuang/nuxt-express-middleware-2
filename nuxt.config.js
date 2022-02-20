@@ -1,4 +1,15 @@
 export default {
+  // https://nuxtjs.org/docs/configuration-glossary/configuration-server/
+  server: {
+    port: 80, // default: 3000
+    host: '0.0.0.0', // default: localhost,
+    timing: false
+  },
+
+  env: {
+    baseUrl: process.env.BASE_URL || 'http://localhost'
+  },
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'nuxt-express-middleware',
@@ -45,6 +56,7 @@ export default {
     baseURL: '/'
   },
 
+  // https://nuxtjs.org/docs/features/loading/
   // loading: false,
   loading: '~/components/LoadingBar.vue',
   loadingIndicator: {
