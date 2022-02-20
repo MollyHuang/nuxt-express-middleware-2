@@ -82,6 +82,9 @@ export default {
     // Custom API endpoint
     // https://nuxtjs.org/docs/configuration-glossary/configuration-servermiddleware/#custom-api-endpoint
     { path: '/server-middleware', handler: '~/server-middleware/rest.js' }
+    // other mapped paths:
+    // { path: '/a', handler: '~/server-middleware/a.js' },
+    // '/a': '~/server-middleware/a.js',
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
