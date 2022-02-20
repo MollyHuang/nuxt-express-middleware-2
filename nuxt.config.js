@@ -1,3 +1,5 @@
+// https://www.tpisoftware.com/tpu/articleDetails/1885
+
 export default {
   // https://nuxtjs.org/docs/configuration-glossary/configuration-server/
   // https://www.nuxtjs.cn/api/configuration-server
@@ -73,7 +75,10 @@ export default {
   // https://nuxtjs.org/docs/configuration-glossary/configuration-servermiddleware/
   serverMiddleware: [
     // { path: 'erik', handler: '~/api/index.js' }
-    '~/api/index'
+    '~/api/index',
+    // Custom Server Middleware
+    // https://nuxtjs.org/docs/configuration-glossary/configuration-servermiddleware/#custom-server-middleware
+    '~/server-middleware/logger'
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
