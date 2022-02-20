@@ -53,8 +53,10 @@ export default {
     background: 'yellow'
   },
 
+  // https://nuxtjs.org/docs/configuration-glossary/configuration-servermiddleware/
   serverMiddleware: [
-    { path: 'erik', handler: '~/api/index.js' }
+    // { path: 'erik', handler: '~/api/index.js' }
+    '~/api/index'
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
