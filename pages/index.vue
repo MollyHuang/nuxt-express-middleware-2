@@ -2,10 +2,14 @@
   <!-- <Tutorial /> -->
   <div>
     <h1>Simple Middleware Example</h1>
+    <hr>
     <router-link to="/erik">
       Press me to Erik
     </router-link>
     <div>{{ response }}</div>
+    <NuxtLink to="/login">
+      Login Page
+    </NuxtLink>
   </div>
 </template>
 
